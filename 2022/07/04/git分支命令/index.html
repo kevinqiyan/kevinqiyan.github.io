@@ -23,18 +23,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="追求源于热爱">
+  <meta name="description" content="git常用命令1234git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)git commit -m &amp;#x27;&amp;#x27; &#x2F; git commit -m [xxx] --&gt; &amp;#x27;提交信息&amp;#x27; 将暂存区的文件添加到版本git status 红色表示在工作区&#x2F;绿色表示在暂存区git reset --soft HE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git分支命令">
 <meta property="og:url" content="http://example.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Kevin">
-<meta property="og:description" content="追求源于热爱">
+<meta property="og:description" content="git常用命令1234git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)git commit -m &amp;#x27;&amp;#x27; &#x2F; git commit -m [xxx] --&gt; &amp;#x27;提交信息&amp;#x27; 将暂存区的文件添加到版本git status 红色表示在工作区&#x2F;绿色表示在暂存区git reset --soft HE">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/17/NZVWP1.png">
 <meta property="article:published_time" content="2022-07-04T14:00:31.000Z">
-<meta property="article:modified_time" content="2022-07-04T16:33:58.176Z">
+<meta property="article:modified_time" content="2022-07-05T06:25:29.783Z">
 <meta property="article:author" content="Kevin">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/06/17/NZVWP1.png">
 
 <link rel="canonical" href="http://example.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/">
 
@@ -177,6 +179,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -224,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-07-05 00:33:58" itemprop="dateModified" datetime="2022-07-05T00:33:58+08:00">2022-07-05</time>
+                <time title="修改时间：2022-07-05 14:25:29" itemprop="dateModified" datetime="2022-07-05T14:25:29+08:00">2022-07-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -249,14 +252,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
+              <span>2.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -268,7 +271,77 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)</span><br><span class="line">git commit -m &#x27;&#x27; / git commit -m [xxx] --&gt; &#x27;提交信息&#x27; 将暂存区的文件添加到版本</span><br><span class="line">git status 红色表示在工作区/绿色表示在暂存区</span><br><span class="line">git reset --soft HEAD^ --&gt; 撤回commit(保存修改)</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git diff --&gt; 比较暂存区与工作区</span><br><span class="line">git diff --cached --&gt; 比较版本区与暂存区</span><br><span class="line">git diff master --&gt; 比较版本区与工作区</span><br><span class="line"></span><br><span class="line">git diff branch1 branch2 --&gt; 显示出两个分支之间所有有差异的文件的详细差异</span><br><span class="line">git diff branch1 branch2 --start --&gt; 显示两个分支之间所有有差异的文件列表</span><br><span class="line">git diff branch1 branch2 xxx --&gt; 显示指定文件的详细差异</span><br></pre></td></tr></table></figure>
+
+<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git log --&gt; 显示从最近到最u按的所有提交日志,如果出现 &#x27;:&#x27; 表示为输出完成,出现end后最后完成</span><br><span class="line">git reflog --&gt; 显示每次提交(commit)的 commit id</span><br><span class="line">git reset --hard HEAD^ --&gt; 版本回退(回退一次提交),^^表示回退两次 - 最多回退两次</span><br><span class="line">git reset --hard 版本号 --&gt; 回退到指定版本号的commit id 版本</span><br><span class="line">git reset --soft 版本号 --&gt; 回退到指定版本号的commit id 并暂存修改后的文件</span><br><span class="line"></span><br><span class="line">git reset HEAD --&gt; 用版本库中的文件去替换暂存区的全部文件</span><br><span class="line">git checkout --x.txt --&gt; 用暂存区指定的文件去替换工作区的指定文件(危险操作)</span><br><span class="line">git checkout HEAD x.txt --&gt; 用版本库中的文件替换暂存区和工作区的文件(危险操作)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="git-rm"><a href="#git-rm" class="headerlink" title="git rm"></a>git rm</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm x.txt --&gt; 删除文件</span><br><span class="line">git rm -r xxx --&gt; 删除文件夹</span><br><span class="line">git rm --cached x.txt --&gt;从暂存区删除文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="分支相关指令"><a href="#分支相关指令" class="headerlink" title="分支相关指令"></a>分支相关指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git fetch origin xxx:xxx  --拉取 &#x27;分支&#x27;（目标分支）并在本地创建 xxx 分支</span><br><span class="line"></span><br><span class="line">git checkout xxx --&gt; 切换xxx分支</span><br><span class="line">git checkout -b dev --&gt; 创建dev分支,并切换到dev分支</span><br><span class="line">git checkout -b xxx origin/xxx --&gt;拉取远程分支并在本地创建该分支</span><br><span class="line"></span><br><span class="line">git branch --&gt; 查看当前分支</span><br><span class="line">git branch -r --&gt; 查看远程所有分支</span><br><span class="line">git branch xxx --&gt; 创建xxx分支</span><br><span class="line">git branch -D branchName --&gt; 删除本地指定分支</span><br><span class="line"></span><br><span class="line">git push origin -d branchName --&gt; 删除远程指定分支</span><br><span class="line">git merge xxx --&gt; 合并xxx分支到当前分支</span><br><span class="line"></span><br><span class="line">git commit --amend --&gt; 修改最新的一次提交commit</span><br><span class="line">	i --&gt; 进入修改模式</span><br><span class="line">	Esc --&gt; 退出编辑模式</span><br><span class="line">	:wq --&gt;  保存并退出</span><br></pre></td></tr></table></figure>
+
+<h3 id="git-rebase"><a href="#git-rebase" class="headerlink" title="git rebase"></a>git rebase</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git reflog --&gt; 查看本地记录</span><br><span class="line">git rebase -i xxx  --&gt;合并commit</span><br><span class="line">	i --&gt; 插入</span><br><span class="line">	:wq --&gt; 保存退出</span><br></pre></td></tr></table></figure>
+
+<h3 id="gitk-–all"><a href="#gitk-–all" class="headerlink" title="gitk –all"></a>gitk –all</h3><ul>
+<li>查看 git 分支提交线</li>
+</ul>
+<h1 id="Git密码操作"><a href="#Git密码操作" class="headerlink" title="Git密码操作"></a>Git密码操作</h1><p>记住密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper wincred</span><br></pre></td></tr></table></figure>
+
+<p>清空本地密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git credential-manager uninstall</span><br></pre></td></tr></table></figure>
+
+<p>保存新密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">控制面板 -&gt; 用户账户 -&gt; 凭据管理器 -&gt; 普通凭据 -&gt; git:https://github.com -&gt; 编辑</span><br></pre></td></tr></table></figure>
+
+<h1 id="Git-项目操作流程"><a href="#Git-项目操作流程" class="headerlink" title="Git 项目操作流程"></a>Git 项目操作流程</h1><p><img src="https://s1.ax1x.com/2020/06/17/NZVWP1.png"></p>
+<p>远程有修改,拉取本地操作</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master  --&gt; 拉取到本地  -第1种</span><br><span class="line">git fetch origin master:tmp --&gt; 新建一个tmp分支,将远程仓库的master分支代码版本复制到tmp分支上,不会自动合并  -第2种</span><br></pre></td></tr></table></figure>
+
+<p>克隆到本地</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone &#x27;仓库地址&#x27;  --&gt;目前只有一个分支</span><br><span class="line">git checkout -b &#x27;本地分支&#x27; origin/&#x27;远程分支&#x27; --&gt;根据远程分支来创建本地另一个分支</span><br><span class="line">git pull --&gt;拉取远程仓库的全部东西</span><br><span class="line">Octotree --&gt;GitHub管理器(chrome插件)</span><br></pre></td></tr></table></figure>
+
+<h2 id="协作开发"><a href="#协作开发" class="headerlink" title="协作开发"></a>协作开发</h2><ol>
+<li>GitHub官网 –&gt; New organization(创建团队&#x2F;组织)</li>
+<li>选择free 或者其他</li>
+<li>输入组织名称&#x2F;联系邮箱</li>
+<li>进行权限配置</li>
+<li>创建新的仓库 -&gt;私有化</li>
+<li>添加成员,添加成员的账户名或者邮箱</li>
+<li>对成员进行权限的配置(读&#x2F;写&#x2F;管理员)</li>
+<li>发送邀请,成员同意</li>
+</ol>
+<h2 id="合并分支-差异对比"><a href="#合并分支-差异对比" class="headerlink" title="合并分支(差异对比)"></a>合并分支(差异对比)</h2><ol>
+<li><p>远程分支有更新</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git fetch --&gt; 将远程分支拉取到本地,并在本地新建一个与远程分支名字一样的本地分支</span><br><span class="line">git fetch origin xxx远程分支名 --&gt;拉取xxx远程分支变为本地分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从远程分支拉取到本地分支</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch 本地分支名  --&gt; 新建本地分支</span><br><span class="line">git pull origin xxx远程分支名  --&gt; 拉取远程分支的代码到新建的本地分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>建立本地分支与远程分支的跟踪联系</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1- git branch -vv --&gt; 可以查看本地分支对应的远程分支</span><br><span class="line"></span><br><span class="line">git checkout -b dev origin/dev --&gt; 在远程分支的基础上建立dev分支,并且让dev分支追踪origin/branch-name</span><br><span class="line"></span><br><span class="line">2- git分支追踪远程分支</span><br><span class="line"></span><br><span class="line">git branch --set-upstream test origin/master --&gt;建立本地仓test并建立追踪关系,如果建立了本地仓也建立了追踪会修改追踪关系(建议使用)</span><br><span class="line">git branck --track test origin/develop</span><br><span class="line"></span><br><span class="line">3- 修改追踪关系,切换到test</span><br><span class="line">git checkout test</span><br><span class="line">git branch --sett-upstream-to origin/master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>git合并远程拉取的分支与本地修改的分支</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1- 先使用 git stash 暂存本地修改的部分</span><br><span class="line">2- 再使用 git pull 拉取到远程分支</span><br><span class="line">3- 使用 git stash pop 弹出本地修改部分,此时git会自动合并</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="GitFork"><a href="#GitFork" class="headerlink" title="GitFork"></a>GitFork</h1><ol>
+<li><pre><code>git clone 地址
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. ```</span><br><span class="line">   git remote add upstream 地址(将b项目作为最新代码的参考标准 -- upstream 是上有仓库的别名,别名可随意命名)</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><pre><code>在本地更改代码
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4. ```</span><br><span class="line">   git add . </span><br><span class="line">   git stash 暂存本地代码</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><pre><code>拉取远程代码
+git pull / git fetch upstream
+</code></pre>
+</li>
+</ol>
+
     </div>
 
     
@@ -336,7 +409,10 @@
     <a href="/2022/07/02/hello-world/" rel="prev" title="Hello World">
       <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/07/05/JavaScript/" rel="next" title="JavaScript">
+      JavaScript <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -400,6 +476,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">git常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-diff"><span class="nav-number">1.1.</span> <span class="nav-text">git diff</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">1.2.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rm"><span class="nav-number">1.3.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%9B%B8%E5%85%B3%E6%8C%87%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">分支相关指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rebase"><span class="nav-number">1.4.1.</span> <span class="nav-text">git rebase</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitk-%E2%80%93all"><span class="nav-number">1.4.2.</span> <span class="nav-text">gitk –all</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%AF%86%E7%A0%81%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">Git密码操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-%E9%A1%B9%E7%9B%AE%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">Git 项目操作流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91"><span class="nav-number">3.1.</span> <span class="nav-text">协作开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF-%E5%B7%AE%E5%BC%82%E5%AF%B9%E6%AF%94"><span class="nav-number">3.2.</span> <span class="nav-text">合并分支(差异对比)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitFork"><span class="nav-number">4.</span> <span class="nav-text">GitFork</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -415,20 +492,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -475,19 +552,19 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">29k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">26 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共75字</span>
+  <span class="post-count">博客全站共13k字</span>
 </div>
 
 
