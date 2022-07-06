@@ -23,22 +23,19 @@
     var CONFIG = {"hostname":"guokwa.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="git常用命令1234git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)git commit -m &amp;#x27;&amp;#x27; &#x2F; git commit -m [xxx] --&gt; &amp;#x27;提交信息&amp;#x27; 将暂存区的文件添加到版本git status 红色表示在工作区&#x2F;绿色表示在暂存区git reset --soft HE">
+  <meta name="description" content="CI&#x2F;CD 是一种通过在应用开发阶段引入自动化来频繁向客户交付应用的方法。CI&#x2F;CD 的核心概念是持续继承、持续交付和持续部署。作为一个面向开发和运营 团队的解决方案，CI&#x2F;CD 主要针对在集成新代码时所引发的问题（亦称：‘集成地狱’）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git分支命令">
-<meta property="og:url" content="https://guokwa.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="ci&#x2F;cd">
+<meta property="og:url" content="https://guokwa.com/2022/07/06/ci-cd/index.html">
 <meta property="og:site_name" content="Kevin">
-<meta property="og:description" content="git常用命令1234git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)git commit -m &amp;#x27;&amp;#x27; &#x2F; git commit -m [xxx] --&gt; &amp;#x27;提交信息&amp;#x27; 将暂存区的文件添加到版本git status 红色表示在工作区&#x2F;绿色表示在暂存区git reset --soft HE">
+<meta property="og:description" content="CI&#x2F;CD 是一种通过在应用开发阶段引入自动化来频繁向客户交付应用的方法。CI&#x2F;CD 的核心概念是持续继承、持续交付和持续部署。作为一个面向开发和运营 团队的解决方案，CI&#x2F;CD 主要针对在集成新代码时所引发的问题（亦称：‘集成地狱’）">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s1.ax1x.com/2020/06/17/NZVWP1.png">
-<meta property="article:published_time" content="2022-07-04T14:00:31.000Z">
-<meta property="article:modified_time" content="2022-07-06T16:15:57.925Z">
+<meta property="article:published_time" content="2022-07-06T06:54:21.000Z">
+<meta property="article:modified_time" content="2022-07-06T07:00:39.270Z">
 <meta property="article:author" content="Kevin">
-<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2020/06/17/NZVWP1.png">
 
-<link rel="canonical" href="https://guokwa.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="https://guokwa.com/2022/07/06/ci-cd/">
 
 
 <script id="page-configurations">
@@ -51,7 +48,7 @@
   };
 </script>
 
-  <title>git分支命令 | Kevin</title>
+  <title>ci/cd | Kevin</title>
   
 
 
@@ -194,7 +191,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://guokwa.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="https://guokwa.com/2022/07/06/ci-cd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/kevin.jpg">
@@ -207,36 +204,18 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          git分支命令
+          ci/cd
         </h1>
 
         <div class="post-meta">
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-07-04 22:00:31" itemprop="dateCreated datePublished" datetime="2022-07-04T22:00:31+08:00">2022-07-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-07-07 00:15:57" itemprop="dateModified" datetime="2022-07-07T00:15:57+08:00">2022-07-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">协同开发</span></a>
-                </span>
+              <time title="创建时间：2022-07-06 14:54:21 / 修改时间：15:00:39" itemprop="dateCreated datePublished" datetime="2022-07-06T14:54:21+08:00">2022-07-06</time>
             </span>
 
           
@@ -252,14 +231,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -271,76 +250,87 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)</span><br><span class="line">git commit -m &#x27;&#x27; / git commit -m [xxx] --&gt; &#x27;提交信息&#x27; 将暂存区的文件添加到版本</span><br><span class="line">git status 红色表示在工作区/绿色表示在暂存区</span><br><span class="line">git reset --soft HEAD^ --&gt; 撤回commit(保存修改)</span><br></pre></td></tr></table></figure>
+        <p>CI&#x2F;CD 是一种通过在应用开发阶段引入自动化来频繁向客户交付应用的方法。CI&#x2F;CD 的核心概念是持续继承、持续交付和持续部署。作为一个面向开发和运营 团队的解决方案，CI&#x2F;CD 主要针对在集成新代码时所引发的问题（亦称：‘集成地狱’）</p>
 <span id="more"></span>
-<h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git diff --&gt; 比较暂存区与工作区</span><br><span class="line">git diff --cached --&gt; 比较版本区与暂存区</span><br><span class="line">git diff master --&gt; 比较版本区与工作区</span><br><span class="line"></span><br><span class="line">git diff branch1 branch2 --&gt; 显示出两个分支之间所有有差异的文件的详细差异</span><br><span class="line">git diff branch1 branch2 --start --&gt; 显示两个分支之间所有有差异的文件列表</span><br><span class="line">git diff branch1 branch2 xxx --&gt; 显示指定文件的详细差异</span><br></pre></td></tr></table></figure>
 
-<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git log --&gt; 显示从最近到最u按的所有提交日志,如果出现 &#x27;:&#x27; 表示为输出完成,出现end后最后完成</span><br><span class="line">git reflog --&gt; 显示每次提交(commit)的 commit id</span><br><span class="line">git reset --hard HEAD^ --&gt; 版本回退(回退一次提交),^^表示回退两次 - 最多回退两次</span><br><span class="line">git reset --hard 版本号 --&gt; 回退到指定版本号的commit id 版本</span><br><span class="line">git reset --soft 版本号 --&gt; 回退到指定版本号的commit id 并暂存修改后的文件</span><br><span class="line"></span><br><span class="line">git reset HEAD --&gt; 用版本库中的文件去替换暂存区的全部文件</span><br><span class="line">git checkout --x.txt --&gt; 用暂存区指定的文件去替换工作区的指定文件(危险操作)</span><br><span class="line">git checkout HEAD x.txt --&gt; 用版本库中的文件替换暂存区和工作区的文件(危险操作)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="CI-x2F-CD"><a href="#CI-x2F-CD" class="headerlink" title="CI&#x2F;CD"></a>CI&#x2F;CD</h1><h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
+<li><p>CI ( <strong>持续集成</strong> )</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">持续集成（CI）是在源代码变更后自动检测、拉取、构建和（在大多数情况下）进行单元测试的过程。持续集成是启动管道的环节（尽管某些预验证 —— 通常称为上线前检查pre-flight checks —— 有时会被归在持续集成之前）</span><br><span class="line"></span><br><span class="line">持续集成的目标是快速确保开发人员新提交的变更是好的，并且适合在代码库中进一步使用</span><br></pre></td></tr></table></figure>
 
-
-
-<h2 id="git-rm"><a href="#git-rm" class="headerlink" title="git rm"></a>git rm</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm x.txt --&gt; 删除文件</span><br><span class="line">git rm -r xxx --&gt; 删除文件夹</span><br><span class="line">git rm --cached x.txt --&gt;从暂存区删除文件</span><br></pre></td></tr></table></figure>
-
-<h2 id="分支相关指令"><a href="#分支相关指令" class="headerlink" title="分支相关指令"></a>分支相关指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git fetch origin xxx:xxx  --拉取 &#x27;分支&#x27;（目标分支）并在本地创建 xxx 分支</span><br><span class="line"></span><br><span class="line">git checkout xxx --&gt; 切换xxx分支</span><br><span class="line">git checkout -b dev --&gt; 创建dev分支,并切换到dev分支</span><br><span class="line">git checkout -b xxx origin/xxx --&gt;拉取远程分支并在本地创建该分支</span><br><span class="line"></span><br><span class="line">git branch --&gt; 查看当前分支</span><br><span class="line">git branch -r --&gt; 查看远程所有分支</span><br><span class="line">git branch xxx --&gt; 创建xxx分支</span><br><span class="line">git branch -D branchName --&gt; 删除本地指定分支</span><br><span class="line"></span><br><span class="line">git push origin -d branchName --&gt; 删除远程指定分支</span><br><span class="line">git merge xxx --&gt; 合并xxx分支到当前分支</span><br><span class="line"></span><br><span class="line">git commit --amend --&gt; 修改最新的一次提交commit</span><br><span class="line">	i --&gt; 进入修改模式</span><br><span class="line">	Esc --&gt; 退出编辑模式</span><br><span class="line">	:wq --&gt;  保存并退出</span><br></pre></td></tr></table></figure>
-
-<h3 id="git-rebase"><a href="#git-rebase" class="headerlink" title="git rebase"></a>git rebase</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git reflog --&gt; 查看本地记录</span><br><span class="line">git rebase -i xxx  --&gt;合并commit</span><br><span class="line">	i --&gt; 插入</span><br><span class="line">	:wq --&gt; 保存退出</span><br></pre></td></tr></table></figure>
-
-<h3 id="gitk-–all"><a href="#gitk-–all" class="headerlink" title="gitk –all"></a>gitk –all</h3><ul>
-<li>查看 git 分支提交线</li>
+<p><strong>持续的含义</strong></p>
+<ul>
+<li><p>频繁发布</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">持续实践背后的目标是能够频繁地交付高质量的软件</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自动化流程</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实现此频率的关键是用自动化流程来处理软件生产中的方方面面。这包括构建、测试、分析、版本控制，以及在某些情况下的部署</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可重复</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">把某个历史版本的代码作为输入，我们应该得到对应相同的可交付产出</span><br><span class="line">理想情况下，这也意味着可以对管道中的流程进行版本控制和重建</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>快速迭代</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“快速”在这里是个相对术语，但无论软件更新/发布的频率如何，预期的持续过程都会以高效的方式将源代码转换为交付物</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h1 id="Git密码操作"><a href="#Git密码操作" class="headerlink" title="Git密码操作"></a>Git密码操作</h1><p>记住密码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper wincred</span><br></pre></td></tr></table></figure>
+<p><strong>什么是持续交付管道</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将源代码转换为可发布产品的多个不同的任务task和作业job通常串联成一个软件“管道”，一个自动流程成功完成后会启动管道中的下一个流程。这些管道有许多不同的叫法，例如持续交付管道、部署管道和软件开发管道。大体上讲，程序管理者在管道执行时管理管道各部分的定义、运行、监控和报告。</span><br></pre></td></tr></table></figure>
 
-<p>清空本地密码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git credential-manager uninstall</span><br></pre></td></tr></table></figure>
 
-<p>保存新密码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">控制面板 -&gt; 用户账户 -&gt; 凭据管理器 -&gt; 普通凭据 -&gt; git:https://github.com -&gt; 编辑</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>CD ( <strong>持续交付</strong> )</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">指整个流程链（管道），它自动监测源代码变更并通过构建、测试、打包和相关操作运行它们以生成可部署的版本，基本上没有任何人为干预。</span><br><span class="line"></span><br><span class="line">持续交付在软件开发过程中的目标是自动化、效率、可靠性、可重复性和质量保障（通过持续测试）。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>CD ( <strong>持续部署</strong> )</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">持续部署（CD）是指能够自动提供持续交付管道中发布版本给最终用户使用的想法。根据用户的安装方式，可能是在云环境中自动部署、app 升级（如手机上的应用程序）、更新网站或只更新可用版本列表。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>持续测试</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">持续测试是指在代码通过持续交付管道时运行扩展范围的自动化测试的实践。单元测试通常与构建过程集成，作为持续集成阶段的一部分，并专注于和其它与之交互的代码隔离的测试。</span><br></pre></td></tr></table></figure>
 
-<h1 id="Git-项目操作流程"><a href="#Git-项目操作流程" class="headerlink" title="Git 项目操作流程"></a>Git 项目操作流程</h1><p><img src="https://s1.ax1x.com/2020/06/17/NZVWP1.png"></p>
-<p>远程有修改,拉取本地操作</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master  --&gt; 拉取到本地  -第1种</span><br><span class="line">git fetch origin master:tmp --&gt; 新建一个tmp分支,将远程仓库的master分支代码版本复制到tmp分支上,不会自动合并  -第2种</span><br></pre></td></tr></table></figure>
-
-<p>克隆到本地</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone &#x27;仓库地址&#x27;  --&gt;目前只有一个分支</span><br><span class="line">git checkout -b &#x27;本地分支&#x27; origin/&#x27;远程分支&#x27; --&gt;根据远程分支来创建本地另一个分支</span><br><span class="line">git pull --&gt;拉取远程仓库的全部东西</span><br><span class="line">Octotree --&gt;GitHub管理器(chrome插件)</span><br></pre></td></tr></table></figure>
-
-<h2 id="协作开发"><a href="#协作开发" class="headerlink" title="协作开发"></a>协作开发</h2><ol>
-<li>GitHub官网 –&gt; New organization(创建团队&#x2F;组织)</li>
-<li>选择free 或者其他</li>
-<li>输入组织名称&#x2F;联系邮箱</li>
-<li>进行权限配置</li>
-<li>创建新的仓库 -&gt;私有化</li>
-<li>添加成员,添加成员的账户名或者邮箱</li>
-<li>对成员进行权限的配置(读&#x2F;写&#x2F;管理员)</li>
-<li>发送邀请,成员同意</li>
-</ol>
-<h2 id="合并分支-差异对比"><a href="#合并分支-差异对比" class="headerlink" title="合并分支(差异对比)"></a>合并分支(差异对比)</h2><ol>
-<li><p>远程分支有更新</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git fetch --&gt; 将远程分支拉取到本地,并在本地新建一个与远程分支名字一样的本地分支</span><br><span class="line">git fetch origin xxx远程分支名 --&gt;拉取xxx远程分支变为本地分支</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从远程分支拉取到本地分支</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch 本地分支名  --&gt; 新建本地分支</span><br><span class="line">git pull origin xxx远程分支名  --&gt; 拉取远程分支的代码到新建的本地分支</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>建立本地分支与远程分支的跟踪联系</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1- git branch -vv --&gt; 可以查看本地分支对应的远程分支</span><br><span class="line"></span><br><span class="line">git checkout -b dev origin/dev --&gt; 在远程分支的基础上建立dev分支,并且让dev分支追踪origin/branch-name</span><br><span class="line"></span><br><span class="line">2- git分支追踪远程分支</span><br><span class="line"></span><br><span class="line">git branch --set-upstream test origin/master --&gt;建立本地仓test并建立追踪关系,如果建立了本地仓也建立了追踪会修改追踪关系(建议使用)</span><br><span class="line">git branck --track test origin/develop</span><br><span class="line"></span><br><span class="line">3- 修改追踪关系,切换到test</span><br><span class="line">git checkout test</span><br><span class="line">git branch --sett-upstream-to origin/master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>git合并远程拉取的分支与本地修改的分支</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1- 先使用 git stash 暂存本地修改的部分</span><br><span class="line">2- 再使用 git pull 拉取到远程分支</span><br><span class="line">3- 使用 git stash pop 弹出本地修改部分,此时git会自动合并</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="GitFork"><a href="#GitFork" class="headerlink" title="GitFork"></a>GitFork</h1><ol>
-<li><pre><code>git clone 地址
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. ```</span><br><span class="line">   git remote add upstream 地址(将b项目作为最新代码的参考标准 -- upstream 是上有仓库的别名,别名可随意命名)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><pre><code>在本地更改代码
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4. ```</span><br><span class="line">   git add . </span><br><span class="line">   git stash 暂存本地代码</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><pre><code>拉取远程代码
-git pull / git fetch upstream
-</code></pre>
+<ul>
+<li><strong>集成测试</strong> 验证组件和服务组合在一起是否正常。</li>
+<li><strong>功能测试</strong> 验证产品中执行功能的结果是否符合预期。</li>
+<li><strong>验收测试</strong> 根据可接受的标准验证产品的某些特征。如性能、可伸缩性、抗压能力和容量。</li>
+</ul>
 </li>
 </ol>
+<h2 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h2><h3 id="stages"><a href="#stages" class="headerlink" title="stages"></a>stages</h3><p><a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/ci/">官方</a>阶段关键词</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.pre -&gt;build -&gt;test</span><br></pre></td></tr></table></figure>
+
+<p>自定义stages</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">stages:</span><br><span class="line"> - stages 1</span><br><span class="line"> - stages 2</span><br><span class="line"> - stages 3</span><br></pre></td></tr></table></figure>
+
+<h3 id="image"><a href="#image" class="headerlink" title="image"></a>image</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">指定一个基础Docker镜像作为基础运行环境</span><br></pre></td></tr></table></figure>
+
+<h3 id="tags"><a href="#tags" class="headerlink" title="tags"></a>tags</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">指定Runner,在项目中的runner中可以进行配置 runner tags</span><br></pre></td></tr></table></figure>
+
+<h3 id="only-x2F-except"><a href="#only-x2F-except" class="headerlink" title="only&#x2F;except"></a>only&#x2F;except</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">限定当前任务执行的条件</span><br></pre></td></tr></table></figure>
+
+<h3 id="when"><a href="#when" class="headerlink" title="when"></a>when</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">实现发生故障或尽管发生故障时仍能运行的环境</span><br><span class="line">when: manual --&gt; 手动</span><br></pre></td></tr></table></figure>
+
+<h3 id="cache"><a href="#cache" class="headerlink" title="cache"></a>cache</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">缓存当前工作环境目录中的一些文件,</span><br></pre></td></tr></table></figure>
+
+<h3 id="allow-failure"><a href="#allow-failure" class="headerlink" title="allow_failure"></a>allow_failure</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="artifacts"><a href="#artifacts" class="headerlink" title="artifacts"></a><a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/ci/yaml/README.html#artifacts">artifacts</a></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用来保存文档</span><br></pre></td></tr></table></figure>
+
+<h4 id="expire-in"><a href="#expire-in" class="headerlink" title="expire_in"></a>expire_in</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">设置文件保存时间</span><br><span class="line">未设置时间单位默认是 秒</span><br></pre></td></tr></table></figure>
+
+<h4 id="paths"><a href="#paths" class="headerlink" title="paths"></a>paths</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">需要保存文件的路径</span><br></pre></td></tr></table></figure>
+
+<h4 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">上传</span><br><span class="line">scp -r 递归上传</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="项目部署-阿里云oss"><a href="#项目部署-阿里云oss" class="headerlink" title="项目部署(阿里云oss)"></a>项目部署(阿里云oss)</h2><h3 id="上传服务器"><a href="#上传服务器" class="headerlink" title="上传服务器"></a>上传服务器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ossutil cp -r -f dist/ oss://xpanel-fast-lenovo-com-cn/bugfix/latest/dist</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="变量的注入与使用"><a href="#变量的注入与使用" class="headerlink" title="变量的注入与使用"></a>变量的注入与使用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">environment:url</span><br><span class="line">environment:name</span><br><span class="line">resource_group</span><br><span class="line">include</span><br><span class="line">variables --&gt; 设置全局变量</span><br><span class="line">image</span><br><span class="line">services:[]</span><br><span class="line">service:[]:name</span><br><span class="line">cache:key</span><br><span class="line">artifacts:name</span><br><span class="line">script,before_script,after_script</span><br><span class="line">only:variables:[],except:variables:[],rules:if</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="variables"><a href="#variables" class="headerlink" title="variables"></a>variables</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">variables:</span><br><span class="line">	MT:&#x27;my name&#x27;</span><br></pre></td></tr></table></figure>
+
+<h1 id="CSDN文献"><a href="#CSDN文献" class="headerlink" title="CSDN文献"></a><a target="_blank" rel="noopener" href="https://fizzz.blog.csdn.net/article/details/117172382">CSDN文献</a></h1><h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。</span><br><span class="line">Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-tutorial.html">菜鸟教程Docker 链接</a></p>
 
     </div>
 
@@ -386,7 +376,7 @@ git pull / git fetch upstream
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://guokwa.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/" title="git分支命令">https://guokwa.com/2022/07/04/git分支命令/</a>
+    <a href="https://guokwa.com/2022/07/06/ci-cd/" title="ci&#x2F;cd">https://guokwa.com/2022/07/06/ci-cd/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -396,9 +386,6 @@ git pull / git fetch upstream
 
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"># Git</a>
-          </div>
 
         
 
@@ -406,12 +393,12 @@ git pull / git fetch upstream
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/07/02/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2022/07/05/webpack/" rel="prev" title="webpack">
+      <i class="fa fa-chevron-left"></i> webpack
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/07/05/JavaScript/" rel="next" title="JavaScript">
-      JavaScript <i class="fa fa-chevron-right"></i>
+    <a href="/2022/07/07/React/" rel="next" title="React基础">
+      React基础 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -476,7 +463,7 @@ git pull / git fetch upstream
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">git常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-diff"><span class="nav-number">1.1.</span> <span class="nav-text">git diff</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">1.2.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rm"><span class="nav-number">1.3.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%9B%B8%E5%85%B3%E6%8C%87%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">分支相关指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rebase"><span class="nav-number">1.4.1.</span> <span class="nav-text">git rebase</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitk-%E2%80%93all"><span class="nav-number">1.4.2.</span> <span class="nav-text">gitk –all</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%AF%86%E7%A0%81%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">Git密码操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-%E9%A1%B9%E7%9B%AE%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">Git 项目操作流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91"><span class="nav-number">3.1.</span> <span class="nav-text">协作开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF-%E5%B7%AE%E5%BC%82%E5%AF%B9%E6%AF%94"><span class="nav-number">3.2.</span> <span class="nav-text">合并分支(差异对比)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitFork"><span class="nav-number">4.</span> <span class="nav-text">GitFork</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CI-x2F-CD"><span class="nav-number">1.</span> <span class="nav-text">CI&#x2F;CD</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"><span class="nav-number">1.1.</span> <span class="nav-text">名词解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D"><span class="nav-number">1.2.</span> <span class="nav-text">关键词</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#stages"><span class="nav-number">1.2.1.</span> <span class="nav-text">stages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#image"><span class="nav-number">1.2.2.</span> <span class="nav-text">image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tags"><span class="nav-number">1.2.3.</span> <span class="nav-text">tags</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#only-x2F-except"><span class="nav-number">1.2.4.</span> <span class="nav-text">only&#x2F;except</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when"><span class="nav-number">1.2.5.</span> <span class="nav-text">when</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cache"><span class="nav-number">1.2.6.</span> <span class="nav-text">cache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#allow-failure"><span class="nav-number">1.2.7.</span> <span class="nav-text">allow_failure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#artifacts"><span class="nav-number">1.2.8.</span> <span class="nav-text">artifacts</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#expire-in"><span class="nav-number">1.2.8.1.</span> <span class="nav-text">expire_in</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#paths"><span class="nav-number">1.2.8.2.</span> <span class="nav-text">paths</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scp"><span class="nav-number">1.2.8.3.</span> <span class="nav-text">scp</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2-%E9%98%BF%E9%87%8C%E4%BA%91oss"><span class="nav-number">1.3.</span> <span class="nav-text">项目部署(阿里云oss)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.3.1.</span> <span class="nav-text">上传服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E6%B3%A8%E5%85%A5%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="nav-number">1.4.</span> <span class="nav-text">变量的注入与使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#variables"><span class="nav-number">1.4.1.</span> <span class="nav-text">variables</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSDN%E6%96%87%E7%8C%AE"><span class="nav-number">2.</span> <span class="nav-text">CSDN文献</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker"><span class="nav-number">3.</span> <span class="nav-text">Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">3.0.1.</span> <span class="nav-text">介绍</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
