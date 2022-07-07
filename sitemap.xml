@@ -94,50 +94,50 @@
 
   <url>
     <loc>https://guokwa.com/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://guokwa.com/tags/React/</loc>
-    <lastmod>2022-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://guokwa.com/tags/JavaScript/</loc>
-    <lastmod>2022-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guokwa.com/tags/TypeScript/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://guokwa.com/tags/Vue/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://guokwa.com/tags/Git/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <loc>https://guokwa.com/tags/React/</loc>
+    <lastmod>2022-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guokwa.com/tags/TypeScript/</loc>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://guokwa.com/tags/Webpack/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guokwa.com/tags/Git/</loc>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -145,43 +145,43 @@
 
   
   <url>
-    <loc>https://guokwa.com/categories/React/</loc>
-    <lastmod>2022-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://guokwa.com/categories/JavaScript/</loc>
-    <lastmod>2022-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guokwa.com/categories/TypeScript/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://guokwa.com/categories/Vue/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://guokwa.com/categories/%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <loc>https://guokwa.com/categories/React/</loc>
+    <lastmod>2022-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guokwa.com/categories/TypeScript/</loc>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://guokwa.com/categories/Webpack/</loc>
-    <lastmod>2022-07-06</lastmod>
+    <lastmod>2022-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guokwa.com/categories/%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
