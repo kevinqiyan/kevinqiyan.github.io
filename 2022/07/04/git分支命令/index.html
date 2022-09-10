@@ -20,20 +20,20 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"guokwa.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"guokwa.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="git常用命令1234git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)git commit -m &amp;#x27;&amp;#x27; &#x2F; git commit -m [xxx] --&gt; &amp;#x27;提交信息&amp;#x27; 将暂存区的文件添加到版本git status 红色表示在工作区&#x2F;绿色表示在暂存区git reset --soft HE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git分支命令">
 <meta property="og:url" content="https://guokwa.com/2022/07/04/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/index.html">
-<meta property="og:site_name" content="Kevin">
+<meta property="og:site_name" content="七言">
 <meta property="og:description" content="git常用命令1234git add xxx 或 .  --&gt; 将工作区的文件添加到暂存区(暂时保存,即将交给git进行版本管理)git commit -m &amp;#x27;&amp;#x27; &#x2F; git commit -m [xxx] --&gt; &amp;#x27;提交信息&amp;#x27; 将暂存区的文件添加到版本git status 红色表示在工作区&#x2F;绿色表示在暂存区git reset --soft HE">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2020/06/17/NZVWP1.png">
 <meta property="article:published_time" content="2022-07-04T14:00:31.000Z">
-<meta property="article:modified_time" content="2022-07-14T14:34:39.150Z">
-<meta property="article:author" content="Kevin">
+<meta property="article:modified_time" content="2022-09-10T13:44:15.204Z">
+<meta property="article:author" content="七言">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://s1.ax1x.com/2020/06/17/NZVWP1.png">
@@ -51,7 +51,7 @@
   };
 </script>
 
-  <title>git分支命令 | Kevin</title>
+  <title>git分支命令 | 七言</title>
   
 
 
@@ -102,7 +102,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Kevin</h1>
+      <h1 class="site-title">七言</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -199,12 +199,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/kevin.jpg">
-      <meta itemprop="name" content="Kevin">
+      <meta itemprop="name" content="七言">
       <meta itemprop="description" content="追求源于热爱">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kevin">
+      <meta itemprop="name" content="七言">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -228,7 +228,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-07-14 22:34:39" itemprop="dateModified" datetime="2022-07-14T22:34:39+08:00">2022-07-14</time>
+                <time title="修改时间：2022-09-10 21:44:15" itemprop="dateModified" datetime="2022-09-10T21:44:15+08:00">2022-09-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -236,7 +236,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">协同开发</span></a>
+                  <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
                 </span>
             </span>
 
@@ -366,12 +366,12 @@ git pull / git fetch upstream
   <div id="qr" style="display: none;">
       
       <div style="display: inline-block;">
-        <img src="/images/wechatpay.jpg" alt="Kevin 微信支付">
+        <img src="/images/wechatpay.jpg" alt="七言 微信支付">
         <p>微信支付</p>
       </div>
       
       <div style="display: inline-block;">
-        <img src="/images/alipay.jpg" alt="Kevin 支付宝">
+        <img src="/images/alipay.jpg" alt="七言 支付宝">
         <p>支付宝</p>
       </div>
 
@@ -383,7 +383,7 @@ git pull / git fetch upstream
 <div>
 <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Kevin
+    <strong>本文作者： </strong>七言
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
@@ -483,9 +483,9 @@ git pull / git fetch upstream
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Kevin"
+    <img class="site-author-image" itemprop="image" alt="七言"
       src="/images/kevin.jpg">
-  <p class="site-author-name" itemprop="name">Kevin</p>
+  <p class="site-author-name" itemprop="name">七言</p>
   <div class="site-description" itemprop="description">追求源于热爱</div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -500,7 +500,7 @@ git pull / git fetch upstream
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -550,7 +550,7 @@ git pull / git fetch upstream
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Kevin</span>
+  <span class="author" itemprop="copyrightHolder">七言</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
@@ -741,6 +741,77 @@ window.addEventListener('pjax:success', () => {
   
 
   
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #4D4D4C;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #F7F7F7;
+      background-image: linear-gradient(#F7F7F7, #F7F7F7);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
 <script src="https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 <script>
