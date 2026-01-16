@@ -1,4 +1,7 @@
 {
+  "name": "kevin blog",
+  "version": "0.0.1",
+  "main": "index.html",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
